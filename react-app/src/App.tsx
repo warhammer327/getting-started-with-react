@@ -1,5 +1,6 @@
 import Alert from "./components/Alert";
 import Button from "./components/Button";
+import GameGrid from "./components/GameGrid";
 import ListGroup from "./components/ListGroup";
 import { useState } from "react";
 
@@ -18,6 +19,7 @@ function App() {
             />
             {showAlert && <Alert onClose={()=> setShowAlert(false)}/>}
             <Button onClick={() => setShowAlert(true)}>My button</Button>
+            <GameGrid/>
         </>
     );
 }
